@@ -1,0 +1,57 @@
+/* @theme front-end */
+@import-theme "uncover";
+@font-face {
+  font-family: "yuyang";
+  src: url("../assets/font/yuyang.ttf");
+}
+:root {
+  font-family: yuyang;
+  letter-spacing: 0.1rem;
+}
+
+section {
+  align-items: center;
+}
+section[id="1"] header::after {
+  content: none;
+}
+section header {
+  background: no-repeat url(../assets/imgs/logo.svg);
+  background-size: contain;
+  height: 45px;
+  display: flex;
+  justify-content: flex-end;
+}
+section header::after {
+  content: "";
+  width: 100px;
+  background: url(../assets/imgs/logo-react.svg) no-repeat;
+  background-position: right;
+}
+section h1 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background: url(../assets/imgs/logo-react.svg) no-repeat;
+  background-position: left center;
+  background-size: 150px;
+  padding-left: 180px;
+}
+section h1 strong {
+  color: #000;
+  font-size: 0.5em;
+}
+section p code {
+  color: #ff7600;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+section pre {
+  background: transparent;
+  box-shadow: 0 6px 20px -10px rgba(0, 0, 0, 0.3);
+}
+section pre code {
+  background: transparent;
+  line-height: 1.2;
+}/*# sourceMappingURL=front-end.css.map */

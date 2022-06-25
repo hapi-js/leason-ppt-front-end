@@ -1,0 +1,231 @@
+/* @theme front-end */
+
+@import-theme 'uncover';
+
+$fontFamily: "../assets/font/yuyang.ttf";
+
+$color1: #0089ff;
+$color2: #ff7600;
+
+@font-face {
+    font-family: "yuyang";
+    src: url($fontFamily);
+}
+
+:root {
+    font-family: yuyang;
+    letter-spacing: 0.1rem;
+}
+
+@mixin theme ($params: ()) {
+    $h1-background-image: map-get($params, h1-background-image) or "";
+    $h1-background-size: map-get($params, h1-background-size) or 20%;
+    $h1-padding-left: map-get($params, h1-padding-left) or 200px;
+
+    align-items: center;
+
+
+
+    h1 {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: $h1-background-image no-repeat center left;
+        background-size: $h1-background-size;
+        padding-left: $h1-padding-left;
+
+        strong {
+            font-size: 1rem;
+            font-weight: normal;
+            color: inherit;
+        }
+    }
+
+    h2 {
+        display: flex;
+        flex-direction: column;
+
+        strong {
+            color: rgba(#000, .5);
+            font-size: 1rem;
+        }
+    }
+
+    &[id="1"] {
+        header {
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    header {
+        text-align: left;
+        height: 40px;
+        background: url(../assets/imgs/logo.svg) no-repeat;
+        background-size: contain;
+        padding-left: 170px;
+
+        &::before {
+            content: "";
+            display: flex;
+            height: 40px;
+            background: $h1-background-image no-repeat;
+            background-size: contain;
+        }
+    }
+
+    >p,
+    li,
+    table,
+    blockquote {
+
+        code {
+            background: transparent;
+            color: #fd7e14;
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    blockquote {
+        // font-size: 0.8rem;
+        color: #666;
+        align-self: center;
+        text-align: left;
+    }
+
+    pre {
+        box-shadow: none;
+    }
+
+
+    >ul,
+    >ol {
+        li {
+            line-height: 1.6;
+        }
+
+        >li {
+
+            >ul,
+            >ol {
+                list-style: none;
+                padding-left: 0;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}
+
+section {
+
+    &.cols {
+
+        >ol,
+        >ul {
+            display: flex;
+            list-style-position: inside;
+            flex-wrap: wrap;
+
+            >li {
+                flex-basis: 50%;
+                transform: scale(0.9);
+
+                >ol,
+                >ul {
+                    list-style: none;
+
+                    li {
+                        line-height: 1.4;
+                        padding-left: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    &.ts {
+        @include theme((h1-background-size: 150px,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-typescript.svg),
+            ));
+    }
+
+    &.html {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-html.svg),
+            ));
+    }
+
+    &.css {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-css.svg),
+            ));
+    }
+
+    &.js {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-javascript.svg),
+            ));
+    }
+
+    &.svg {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-svg.svg),
+            ));
+    }
+
+    &.vue {
+        @include theme((h1-background-size: 160px,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-vue.svg),
+            ));
+    }
+
+    &.jquery {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-jquery-mini.svg),
+            ));
+    }
+
+    &.echarts {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-echarts.svg),
+            ));
+    }
+
+    &.git {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-git-mini.svg),
+            ));
+    }
+
+    &.ng {
+        @include theme((h1-background-size: contain,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-angular.svg),
+            ));
+    }
+
+    &.uniapp {
+        @include theme((h1-background-size: 150px,
+                h1-padding-left: 190px,
+                h1-background-image: url(../assets/imgs/logo-uniapp.svg),
+            ));
+    }
+
+    &.webpack {
+        @include theme((h1-background-size: 200px,
+                h1-padding-left: 220px,
+                h1-background-image: url(../assets/imgs/logo-webpack-mini.svg),
+            ));
+    }
+}
