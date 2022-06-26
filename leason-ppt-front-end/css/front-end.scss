@@ -2,7 +2,7 @@
 
 @import-theme 'uncover';
 
-$fontFamily: "../assets/font/yuyang.ttf";
+$fontFamily: "../leason-ppt-front-end/font/yuyang.ttf";
 
 $color1: #0089ff;
 $color2: #ff7600;
@@ -30,7 +30,7 @@ section {
   }
 
   header {
-    background: no-repeat url(../assets/imgs/logo.svg);
+    background: no-repeat url(../leason-ppt-front-end/imgs/logo.svg);
     background-size: contain;
     height: 45px;
     display: flex;
@@ -39,7 +39,7 @@ section {
     &::after {
       content: '';
       width: 100px;
-      background: url(../assets/imgs/logo-react.svg) no-repeat;
+      background: url(../leason-ppt-front-end/imgs/logo-react.svg) no-repeat;
       background-position: right;
     }
   }
@@ -48,7 +48,7 @@ section {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: url(../assets/imgs/logo-react.svg) no-repeat;
+    background: url(../leason-ppt-front-end/imgs/logo-react.svg) no-repeat;
     background-position: left center;
     background-size: 150px;
     padding-left: 180px;
@@ -68,10 +68,6 @@ section {
       padding: 0;
       margin: 0;
     }
-  }
-
-  p {
-    // border: solid;
   }
 
   pre {

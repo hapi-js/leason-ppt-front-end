@@ -1,0 +1,875 @@
+/* @theme front-end */
+@import-theme "uncover";
+@font-face {
+  font-family: "yuyang";
+  src: url("../assets/font/yuyang.ttf");
+}
+:root {
+  font-family: yuyang;
+  letter-spacing: 0.1rem;
+}
+
+section.cols > ol,
+section.cols > ul {
+  display: flex;
+  list-style-position: inside;
+  flex-wrap: wrap;
+}
+section.cols > ol > li,
+section.cols > ul > li {
+  flex-basis: 50%;
+  transform: scale(0.9);
+}
+section.cols > ol > li > ol,
+section.cols > ol > li > ul,
+section.cols > ul > li > ol,
+section.cols > ul > li > ul {
+  list-style: none;
+}
+section.cols > ol > li > ol li,
+section.cols > ol > li > ul li,
+section.cols > ul > li > ol li,
+section.cols > ul > li > ul li {
+  line-height: 1.4;
+  padding-left: 12px;
+}
+section.ts {
+  align-items: center;
+}
+section.ts h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-typescript.svg) no-repeat center left;
+  background-size: 150px;
+  padding-left: 190px;
+}
+section.ts h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.ts h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.ts h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.ts[id="1"] header::before {
+  content: none;
+}
+section.ts header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.ts header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-typescript.svg) no-repeat;
+  background-size: contain;
+}
+section.ts > p code,
+section.ts li code,
+section.ts table code,
+section.ts blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.ts blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.ts pre {
+  box-shadow: none;
+}
+section.ts > ul li,
+section.ts > ol li {
+  line-height: 1.6;
+}
+section.ts > ul > li > ul,
+section.ts > ul > li > ol,
+section.ts > ol > li > ul,
+section.ts > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.html {
+  align-items: center;
+}
+section.html h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-html.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.html h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.html h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.html h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.html[id="1"] header::before {
+  content: none;
+}
+section.html header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.html header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-html.svg) no-repeat;
+  background-size: contain;
+}
+section.html > p code,
+section.html li code,
+section.html table code,
+section.html blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.html blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.html pre {
+  box-shadow: none;
+}
+section.html > ul li,
+section.html > ol li {
+  line-height: 1.6;
+}
+section.html > ul > li > ul,
+section.html > ul > li > ol,
+section.html > ol > li > ul,
+section.html > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.css {
+  align-items: center;
+}
+section.css h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-css.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.css h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.css h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.css h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.css[id="1"] header::before {
+  content: none;
+}
+section.css header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.css header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-css.svg) no-repeat;
+  background-size: contain;
+}
+section.css > p code,
+section.css li code,
+section.css table code,
+section.css blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.css blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.css pre {
+  box-shadow: none;
+}
+section.css > ul li,
+section.css > ol li {
+  line-height: 1.6;
+}
+section.css > ul > li > ul,
+section.css > ul > li > ol,
+section.css > ol > li > ul,
+section.css > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.js {
+  align-items: center;
+}
+section.js h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-javascript.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.js h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.js h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.js h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.js[id="1"] header::before {
+  content: none;
+}
+section.js header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.js header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-javascript.svg) no-repeat;
+  background-size: contain;
+}
+section.js > p code,
+section.js li code,
+section.js table code,
+section.js blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.js blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.js pre {
+  box-shadow: none;
+}
+section.js > ul li,
+section.js > ol li {
+  line-height: 1.6;
+}
+section.js > ul > li > ul,
+section.js > ul > li > ol,
+section.js > ol > li > ul,
+section.js > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.svg {
+  align-items: center;
+}
+section.svg h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-svg.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.svg h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.svg h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.svg h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.svg[id="1"] header::before {
+  content: none;
+}
+section.svg header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.svg header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-svg.svg) no-repeat;
+  background-size: contain;
+}
+section.svg > p code,
+section.svg li code,
+section.svg table code,
+section.svg blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.svg blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.svg pre {
+  box-shadow: none;
+}
+section.svg > ul li,
+section.svg > ol li {
+  line-height: 1.6;
+}
+section.svg > ul > li > ul,
+section.svg > ul > li > ol,
+section.svg > ol > li > ul,
+section.svg > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.vue {
+  align-items: center;
+}
+section.vue h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-vue.svg) no-repeat center left;
+  background-size: 160px;
+  padding-left: 190px;
+}
+section.vue h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.vue h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.vue h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.vue[id="1"] header::before {
+  content: none;
+}
+section.vue header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.vue header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-vue.svg) no-repeat;
+  background-size: contain;
+}
+section.vue > p code,
+section.vue li code,
+section.vue table code,
+section.vue blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.vue blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.vue pre {
+  box-shadow: none;
+}
+section.vue > ul li,
+section.vue > ol li {
+  line-height: 1.6;
+}
+section.vue > ul > li > ul,
+section.vue > ul > li > ol,
+section.vue > ol > li > ul,
+section.vue > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.jquery {
+  align-items: center;
+}
+section.jquery h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-jquery-mini.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.jquery h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.jquery h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.jquery h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.jquery[id="1"] header::before {
+  content: none;
+}
+section.jquery header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.jquery header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-jquery-mini.svg) no-repeat;
+  background-size: contain;
+}
+section.jquery > p code,
+section.jquery li code,
+section.jquery table code,
+section.jquery blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.jquery blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.jquery pre {
+  box-shadow: none;
+}
+section.jquery > ul li,
+section.jquery > ol li {
+  line-height: 1.6;
+}
+section.jquery > ul > li > ul,
+section.jquery > ul > li > ol,
+section.jquery > ol > li > ul,
+section.jquery > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.echarts {
+  align-items: center;
+}
+section.echarts h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-echarts.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.echarts h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.echarts h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.echarts h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.echarts[id="1"] header::before {
+  content: none;
+}
+section.echarts header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.echarts header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-echarts.svg) no-repeat;
+  background-size: contain;
+}
+section.echarts > p code,
+section.echarts li code,
+section.echarts table code,
+section.echarts blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.echarts blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.echarts pre {
+  box-shadow: none;
+}
+section.echarts > ul li,
+section.echarts > ol li {
+  line-height: 1.6;
+}
+section.echarts > ul > li > ul,
+section.echarts > ul > li > ol,
+section.echarts > ol > li > ul,
+section.echarts > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.git {
+  align-items: center;
+}
+section.git h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-git-mini.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.git h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.git h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.git h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.git[id="1"] header::before {
+  content: none;
+}
+section.git header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.git header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-git-mini.svg) no-repeat;
+  background-size: contain;
+}
+section.git > p code,
+section.git li code,
+section.git table code,
+section.git blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.git blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.git pre {
+  box-shadow: none;
+}
+section.git > ul li,
+section.git > ol li {
+  line-height: 1.6;
+}
+section.git > ul > li > ul,
+section.git > ul > li > ol,
+section.git > ol > li > ul,
+section.git > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.ng {
+  align-items: center;
+}
+section.ng h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-angular.svg) no-repeat center left;
+  background-size: contain;
+  padding-left: 190px;
+}
+section.ng h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.ng h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.ng h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.ng[id="1"] header::before {
+  content: none;
+}
+section.ng header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.ng header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-angular.svg) no-repeat;
+  background-size: contain;
+}
+section.ng > p code,
+section.ng li code,
+section.ng table code,
+section.ng blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.ng blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.ng pre {
+  box-shadow: none;
+}
+section.ng > ul li,
+section.ng > ol li {
+  line-height: 1.6;
+}
+section.ng > ul > li > ul,
+section.ng > ul > li > ol,
+section.ng > ol > li > ul,
+section.ng > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.uniapp {
+  align-items: center;
+}
+section.uniapp h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-uniapp.svg) no-repeat center left;
+  background-size: 150px;
+  padding-left: 190px;
+}
+section.uniapp h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.uniapp h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.uniapp h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.uniapp[id="1"] header::before {
+  content: none;
+}
+section.uniapp header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.uniapp header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-uniapp.svg) no-repeat;
+  background-size: contain;
+}
+section.uniapp > p code,
+section.uniapp li code,
+section.uniapp table code,
+section.uniapp blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.uniapp blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.uniapp pre {
+  box-shadow: none;
+}
+section.uniapp > ul li,
+section.uniapp > ol li {
+  line-height: 1.6;
+}
+section.uniapp > ul > li > ul,
+section.uniapp > ul > li > ol,
+section.uniapp > ol > li > ul,
+section.uniapp > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}
+section.webpack {
+  align-items: center;
+}
+section.webpack h1 {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background: url(../assets/imgs/logo-webpack-mini.svg) no-repeat center left;
+  background-size: 200px;
+  padding-left: 220px;
+}
+section.webpack h1 strong {
+  font-size: 1rem;
+  font-weight: normal;
+  color: inherit;
+}
+section.webpack h2 {
+  display: flex;
+  flex-direction: column;
+}
+section.webpack h2 strong {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+}
+section.webpack[id="1"] header::before {
+  content: none;
+}
+section.webpack header {
+  text-align: left;
+  height: 40px;
+  background: url(../assets/imgs/logo.svg) no-repeat;
+  background-size: contain;
+  padding-left: 170px;
+}
+section.webpack header::before {
+  content: "";
+  display: flex;
+  height: 40px;
+  background: url(../assets/imgs/logo-webpack-mini.svg) no-repeat;
+  background-size: contain;
+}
+section.webpack > p code,
+section.webpack li code,
+section.webpack table code,
+section.webpack blockquote code {
+  background: transparent;
+  color: #fd7e14;
+  padding: 0;
+  margin: 0;
+}
+section.webpack blockquote {
+  color: #666;
+  align-self: center;
+  text-align: left;
+}
+section.webpack pre {
+  box-shadow: none;
+}
+section.webpack > ul li,
+section.webpack > ol li {
+  line-height: 1.6;
+}
+section.webpack > ul > li > ul,
+section.webpack > ul > li > ol,
+section.webpack > ol > li > ul,
+section.webpack > ol > li > ol {
+  list-style: none;
+  padding-left: 0;
+  font-size: 0.9rem;
+}/*# sourceMappingURL=index.css.map */

@@ -1,7 +1,7 @@
 {
     "editor.formatOnSave": true,
     "markdown.marp.themes": [
-        "./assets/css/front-end.css"
+        "./leason-ppt-front-end/css/front-end.css"
     ],
     "markdown.preview.breaks": false,
     "markdown.extension.print.imgToBase64": true,
