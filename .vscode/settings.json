@@ -5,5 +5,6 @@
     ],
     "markdown.preview.breaks": false,
     "markdown.extension.print.imgToBase64": true,
-    "markdown.extension.print.theme": "light"
+    "markdown.extension.print.theme": "light",
+    "markdown.marp.outlineExtension": false
 }
