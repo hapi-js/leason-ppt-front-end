@@ -1,0 +1,11 @@
+/* @theme main */
+@import-theme "uncover";
+
+section p {
+    font-size: 3rem;
+}
+
+section p code,
+section li code {
+    background-color: transparent;
+}
