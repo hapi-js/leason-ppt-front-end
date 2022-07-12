@@ -1,11 +1,14 @@
 /* @theme main */
 @import-theme "uncover";
 
-section p {
-    font-size: 3rem;
+:root {
+    --color1: #0089ff;
+    --color2: #ff7600;
+
 }
 
 section p code,
 section li code {
     background-color: transparent;
+    color: var(--color2);
 }
