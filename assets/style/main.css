@@ -12,3 +12,7 @@ section li code {
     background-color: transparent;
     color: var(--color2);
 }
+
+section header{
+    background-color: #ff7600;
+}
