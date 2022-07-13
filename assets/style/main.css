@@ -4,15 +4,63 @@
 :root {
     --color1: #0089ff;
     --color2: #ff7600;
+}
 
+@font-face {
+    font-family: yuyang;
+    src: url("../assets/font/yuyang.ttf");
+}
+
+:root {
+    font-family: yuyang;
 }
 
 section p code,
 section li code {
     background-color: transparent;
     color: var(--color2);
+    padding: 0;
+    margin: 0;
+    /* border: solid; */
 }
 
-section header{
-    background-color: #ff7600;
+section header {
+    background: url("../assets/imgs/logo.svg") no-repeat;
+    background-size: contain;
+    height: 40px;
+    color: #333;
+    font-size: .6rem;
+    display: flex;
+    justify-content: flex-end;
+    letter-spacing: 5px;
+}
+
+section h1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+}
+
+section[id="1"] h2 {
+    align-self: center;
+}
+
+section pre,
+section pre code {
+    box-shadow: none;
+}
+
+section blockquote {
+    align-self: center;
+}
+
+
+section.react h1 {
+    background-image: url("../assets/imgs/logo-react.svg");
+    padding-left: 150px;
+}
+
+section.javascript h1 {
+    background-image: url("../assets/imgs/logo-javascript.svg");
+    padding-left: 130px;
 }
