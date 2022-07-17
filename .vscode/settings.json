@@ -8,5 +8,6 @@
     "markdown.extension.print.imgToBase64": true,
     "markdown.extension.print.theme": "light",
     "markdown.marp.outlineExtension": false,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "markdown.marp.enableHtml": true
 }
